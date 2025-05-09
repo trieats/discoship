@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiscoShip</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>DiscoShip</h1>
+            <button id="startBtn" class="main-btn">Let's get to know each other</button>
+        </div>
+
+        <!-- Topic Screen -->
+        <div id="topicScreen" class="screen hidden">
+            <button class="back-btn">← Go Back</button>
+            <h2>What do you want to talk about?</h2>
+            <div class="button-container">
+                <button class="option-btn topic-btn" data-topic="growing_up">Growing Up</button>
+                <button class="option-btn topic-btn" data-topic="family">Family Connections</button>
+                <button class="option-btn topic-btn" data-topic="values">Life Values & Beliefs</button>
+                <button class="option-btn topic-btn" data-topic="spiritual">Spiritual Side</button>
+                <button class="option-btn topic-btn" data-topic="career">Career & Calling</button>
+                <button class="option-btn topic-btn" data-topic="growth">Personal Growth Journeys</button>
+                <button class="option-btn topic-btn" data-topic="relationships">Relationship Perspectives</button>
+                <button class="option-btn topic-btn" data-topic="dreams">Dreams & Big Ambitions</button>
+                <button class="option-btn topic-btn" data-topic="future">Looking Ahead</button>
+            </div>
+        </div>
+        
+        <!-- Intensity Screen -->
+        <div id="intensityScreen" class="screen hidden">
+            <button class="back-btn">← Go Back</button>
+            <h2>How deep do you want to go?</h2>
+            <div class="button-container">
+                <button class="option-btn intensity-btn" data-intensity="light">Light & Fun</button>
+                <button class="option-btn intensity-btn" data-intensity="medium">Getting Deeper</button>
+                <button class="option-btn intensity-btn" data-intensity="deep">Soul Searching</button>
+            </div>
+        </div>
+        
+        <!-- Hidden Selects -->
+        <select id="topicSelect" class="hidden">
+            <option value="">Select a topic</option>
+            <option value="growing_up">Growing Up</option>
+            <option value="family">Family Connections</option>
+            <option value="values">Life Values & Beliefs</option>
+            <option value="spiritual">Spiritual Side</option>
+            <option value="career">Career & Calling</option>
+            <option value="growth">Personal Growth Journeys</option>
+            <option value="relationships">Relationship Perspectives</option>
+            <option value="dreams">Dreams & Big Ambitions</option>
+            <option value="future">Looking Ahead</option>
+        </select>
+        
+        <select id="intensitySelect" class="hidden">
+            <option value="">Select intensity</option>
+            <option value="light">Light & Fun</option>
+            <option value="medium">Getting Deeper</option>
+            <option value="deep">Soul Searching</option>
+        </select>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen hidden">
+            <button class="back-btn">← Go Back</button>
+            <h2>Are you ready to connect?</h2>
+            <button id="getQuestionBtn" class="random-btn">Get Question</button>
+            <div id="questionDisplay" class="questions-container">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
