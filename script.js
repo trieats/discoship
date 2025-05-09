@@ -87,7 +87,7 @@ const questions = {
             "What's a rule you always follow?",
             "What's a belief you've changed your mind about?",
             "What's a \"life hack\" you swear by?",
-            "What's a silly hill you'd die on?"
+            "What's a simple pleasure you value most?"
         ],
         medium: [
             "What value guides your daily decisions?",
